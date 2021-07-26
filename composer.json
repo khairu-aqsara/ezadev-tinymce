@@ -3,7 +3,7 @@
     "description": "TinyMCE Text Editor",
     "type": "library",
     "keywords": ["ezadev-admin", "extension"],
-    "homepage": "https://github.com/ezadev/tinymce",
+    "homepage": "https://github.com/khairu-aqsara/ezadev-tinymce",
     "license": "MIT",
     "authors": [
         {
