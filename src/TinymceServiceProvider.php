@@ -27,5 +27,9 @@ class TinymceServiceProvider extends ServiceProvider
                 'tinymce'
             );
         }
+
+        Admin::booting(function () {
+            Form::extend('tinymce', Editor::class);
+        });
     }
 }

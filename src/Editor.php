@@ -16,7 +16,12 @@ class Editor extends Textarea
     public function render()
     {
         $this->script = <<<EOT
-tinymce.init({selector:'{$this->id}'});
+tinymce.init({
+    selector:'#{$this->id}-tinymce',
+    plugins: 'fullscreen image link media mediaembed table',
+    menubar: 'insert format tools table',
+    min_height: 450
+});
 EOT;
         return parent::render();
     }
