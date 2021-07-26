@@ -1,0 +1,33 @@
+{
+    "name": "ezadev/tinymce",
+    "description": "TinyMCE Text Editor",
+    "type": "library",
+    "keywords": ["ezadev-admin", "extension"],
+    "homepage": "https://github.com/ezadev/tinymce",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khairu Aqsara",
+            "email": "wenkhairu@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "ezadev/ezadev-admin": "~0.6.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ezadev\\Tinymce\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ezadev\\Tinymce\\TinymceServiceProvider"
+            ]
+        }
+    }
+}
