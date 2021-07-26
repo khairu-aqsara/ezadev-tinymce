@@ -18,7 +18,7 @@ class Editor extends Textarea
         $this->script = <<<EOT
 tinymce.init({
     selector:'#{$this->id}-tinymce',
-    plugins: 'fullscreen image link media mediaembed table',
+    plugins: 'fullscreen image link media table',
     menubar: 'insert format tools table',
     min_height: 450
 });
